@@ -1,4 +1,45 @@
 html {
-    background: #f2f1f4;
-    color: #19171c;
+  background: #ffffffaa;
+  color: #02002dda;
+  font-family: "Arial", sans-serif;
+}
+
+.description {
+  display: none;
+}
+
+body {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.title {
+  background-color: #ffffff;
+  font-weight: bold;
+  color: #04004fb2;
+  padding: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.title:hover {
+  border: rgb(0, 0, 79);
+}
+
+.active {
+  border: rgb(0, 0, 79);
+}
+
+.description {
+  padding: 15px;
+  background-color: #ffffffc4;
+}
+
+.description p {
+  margin: 0;
+}
+
+.active + .description {
+  display: block;
 }
